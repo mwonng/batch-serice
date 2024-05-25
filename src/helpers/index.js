@@ -7,6 +7,11 @@ export const singleTaskHandler = (task) => {
   return task;
 }
 
+/**
+ * This is a helper function to simulate a delay
+ * @param {number} ms - pass a number in milliseconds
+ * @returns Promise
+ */
 export const sleep = (ms) => {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
