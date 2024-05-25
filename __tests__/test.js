@@ -1,18 +1,11 @@
 import { BatchService, singleTaskHandler } from '../main.js';
 import * as BatchProcessor from '../src/lib/batchProcessor.js'
+import { sleep } from "../src/helpers/index.js";
 
-// const { BatchService, singleTaskHandler } = require('../main.mjs');
-// const BatchProcessor = require('../src/lib/batchProcessor.mjs');
 beforeEach(() => {
   jest.clearAllMocks();
 });
 
-
-function sleep(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
 test('should be batch request if batch size is full', async () => {
   const batchService = new BatchService(3, 300, singleTaskHandler);
   batchService.dispatch("1");

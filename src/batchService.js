@@ -16,7 +16,6 @@ export class BatchService {
     }
 
     if (this.taskQueue.length === 0) {
-      console.log("no task to process", task)
       return;
     }
 
