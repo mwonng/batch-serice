@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@babel/plugin-syntax-import-assertions": "^7.17.12",
+    "@babel/preset-env": "^7.24.6",
+    "babel-jest": "^29.7.0",
+    "ts-jest": "^29.1.3"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=16.15"
+  }
+}

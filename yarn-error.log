@@ -1,0 +1,49 @@
+Arguments: 
+  /home/mw/.nvm/versions/node/v16.20.0/bin/node /home/mw/.nvm/versions/node/v16.20.0/bin/yarn test
+
+PATH: 
+  /home/mw/.local/bin:/home/mw/bin:/home/mw/.emacs.d/bin:/usr/local/bin/:/home/mw/.local/bin:/home/mw/.local/bin:/home/mw/bin:/home/mw/.emacs.d/bin:/usr/local/bin/:/home/mw/.local/bin:/home/mw/.local/bin:/home/mw/bin:/home/mw/.emacs.d/bin:/usr/local/bin/:/home/mw/.local/bin:/home/mw/.local/bin:/home/mw/bin:/home/mw/.emacs.d/bin:/usr/local/bin/:/home/mw/.local/bin:/home/mw/.local/bin:/home/mw/bin:/home/mw/.emacs.d/bin:/usr/local/bin/:/home/mw/.local/bin:/home/mw/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/home/mw/.rvm/gems/ruby-3.3.0/bin:/home/mw/.rvm/gems/ruby-3.3.0@global/bin:/home/mw/.rvm/rubies/ruby-3.3.0/bin:/home/mw/.nvm/versions/node/v16.20.0/bin:/home/mw/.local/bin:/home/mw/bin:/home/mw/.emacs.d/bin:/usr/local/bin/:/home/mw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Users/mhwon/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mhwon/AppData/Local/Programs/Microsoft VS Code/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin:/home/mw/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/mw/projects/upguard-interview/package.json: Unexpected token } in JSON at position 284
+      at JSON.parse (<anonymous>)
+      at /home/mw/.nvm/versions/node/v16.20.0/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/home/mw/.nvm/versions/node/v16.20.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/mw/.nvm/versions/node/v16.20.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "scripts": {
+      "test": "jest --config jest.config.js"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0"
+    },
+    "jest": {
+      "moduleFileExtensions": [
+        "js",
+        "jsx"
+      ],
+      "moduleDirectories": [
+        "node_modules",
+        "bower_components",
+        "src"
+      ],
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
