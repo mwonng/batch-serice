@@ -85,6 +85,10 @@ export class BatchService {
     }
   }
 
+  /**
+   * 
+   * @returns - return a history of processed tasks by chunks
+   */
   shutdown() {
     return this.history
   }

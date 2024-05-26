@@ -7,11 +7,6 @@
 
 export const batchProcessor = async (tasks, processor) =>
   Promise.allSettled(tasks.map((task, index) => processor(task)))
-    .then((results) => {
-      // results.forEach((result) => {
-      //   console.log("processing tasks:", result, result.status)
-      // })
-      return results
-    })
-    .catch((error) => { console.log("error", error) });
+    .then((results) => results)
+    .catch((error) => { console.error("error", error) });
 

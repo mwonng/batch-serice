@@ -64,10 +64,10 @@ test('should be call BatchProcessor if batch size is expired', async () => {
   }, 1000)
 });
 
-
 test('should NOT call BatchProcessor if batch size empty', () => {
   const mockBatchProcessor = jest.spyOn(BatchProcessor, 'batchProcessor');
   const batchService = new BatchService(3, 200, singleTaskHandler);
   batchService.dispatch(null);
   expect(mockBatchProcessor).toHaveBeenCalledTimes(0);
 });
+
